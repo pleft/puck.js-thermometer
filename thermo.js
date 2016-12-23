@@ -39,6 +39,8 @@ setInterval(function() {
     /* check if negative temp exists */
     negative = temp<0 || false;
     temp = Math.abs(temp);
+    /* temp range -99 to +99 */
+    if(temp>100) temp = 99;
     digits = parseInt(temp).toString(10).split("").map(Number);
     /* always make sure the `digits` array is of length 2 */
     if(digits.length===1) {
