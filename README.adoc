@@ -1,0 +1,2 @@
+# puck.js-thermometer
+A simple thermometer in espruino js for Puck.js
